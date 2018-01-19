@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*=INVITE SKIN CSS
+ ---------------------------------------------------------------------------*/
+
+#invitationpage td,
+#invitationpage th { padding-top: 6px; padding-bottom: 6px; text-align: left; }
+
+#invitationpage .label { padding-right: 10px; width: 120px; }
+#invitationpage .label { text-align: right; !important }
+
+#invitationpage .checkbox,
+#invitationpage .radiobutton,
+#invitationpage .text { margin: 0 .5em 0 0; }
+
+#invitationpage label,
+#invitationpage .label,
+#invitationpage .fieldlabel { font-weight: bold; }
+
+#captcha_container #captcha_buttons { line-height: 0; margin: 0; } /*Removes vertical spacing between captcha buttons*/
+
+.contact_importer_email,
+#from_email,
+#from_firstname,
+#from_lastname { width: 360px; }
+
+#invitationpage #submit_button { margin-top: 18px; }
+
+#invitationpage .bsd-shareButtons-wrap{clear:both;margin-bottom:.4em;}
+    #invitationpage .bsd-shareButtons-wrap a{float:left; font-style:normal !important; text-decoration: none; margin-right:.4em; background:#eee; font-size:14px; color:#fff; padding:.6em 1em; -webkit-border-radius: 5px;
+-moz-border-radius: 5px; border-radius: 5px;}
+    #invitationpage .bsd-shareButtons-wrap a.bsd-shareButton-email{color:#999; /*background:#999 url('../../../images/invite/bsd-emailPressedBG.png') repeat-x top left;*/}
+    #invitationpage .bsd-shareButtons-wrap a.bsd-shareButton-facebook{background: #999 url('../../../images/invite/bsd-fbShareBG.png') repeat-x top left;}
+        #invitationpage .bsd-shareButtons-wrap a.bsd-shareButton-facebook span{padding-left:20px; background: url('../../../images/invite/bsd-fbIcon.png') no-repeat left;}
+    #invitationpage .bsd-shareButtons-wrap a.bsd-shareButton-twitter{background: #999 url('../../../images/invite/bsd-twShareBG.png') repeat-x top left;}
+        #invitationpage .bsd-shareButtons-wrap .bsd-shareButton-twitter span{padding-left:25px; background: url('../../../images/invite/bsd-twIcon.png') no-repeat left;}
+
+
+#invitationpage #contact_importer_button {
+    font-size: 80%;
+    border: 3px double #999999;
+    border-top-color: #CCCCCC;
+    border-left-color: #CCCCCC;
+    padding: 0.25em;
+    background-color: #FFFFFF;
+    background-image: url(../../../utils/contact_importer/images/background_form_element.gif);
+    background-repeat: repeat-x;
+    color: #555;
+    font-weight: bold;
+    width: 28em;
+    margin: 6px auto 4px auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}

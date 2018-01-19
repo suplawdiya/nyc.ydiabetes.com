@@ -1,0 +1,24 @@
+jQuery.noConflict();
+
+function form_input_classes(){
+    jQuery('input[type="text"]').addClass('text');
+    jQuery('input[type="password"]').addClass('text');
+    jQuery('input[type="checkbox"]').addClass('checkbox');
+    jQuery('input[type="radio"]').addClass('radiobutton');
+    jQuery('input[type="submit"]').addClass('submit');
+    jQuery('input[type="image"]').addClass('buttonImage');
+}
+
+function form_labelize(){  jQuery(".labelize input:text").clearingInput(); }   
+
+jQuery(document).ready(function() {
+    form_input_classes();
+    form_labelize();
+    Cufon.replace('.f-replace-b', { fontFamily: 'cachetbold' });
+    Cufon.replace('.f-replace', { fontFamily: 'cachetbook' });
+    jQuery("#facts-entries-cont").jCarouselLite({
+        btnNext: "#facts-next",
+        btnPrev: "#facts-prev"
+    });
+
+});

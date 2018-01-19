@@ -1,0 +1,60 @@
+/*
+GENERAL RULES
+- these reusable rules set fonts to serif sized in points, convert backgrounds to white, and provide print friendly line-spacing and page widths/padding.
+*/
+
+body {background: white; font-size: 11pt; font-family: Georgia,'Times New Roman', Times, serif;} 
+
+h1 {font-size: 18pt;} // set fonts in point
+h2 {font-size: 16pt;}
+h3 {font-size: 14pt;}
+
+#container {
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   line-height: 1.5em;
+}
+
+a:link, a:visited {
+   /*color: #668a33;*/
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+/*
+CUSTOMIZATIONS
+- these should be customized.  see comments below.
+*/
+
+/* to make print-readable links, we're going to use CSS 3  to add the site's domain name */
+
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+#content a[href^="/"]:after {
+   content: " (http://www.domain.com/" attr(href) ") ";
+   }
+
+/* hide all non-essential divs */
+#sidebar,
+#editToggle,
+.editThis,
+#navigation,
+#addthis,
+#search
+{ display: none; }
+
+#nav {display: none;}
+
+#header {border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+#content {margin: 0;}
+#footer {border-top: 1px solid #ccc; padding-top: 10px;}
+
+#quick-sign-up, #facts-slider-cont, #subnav-ul {display: none;}

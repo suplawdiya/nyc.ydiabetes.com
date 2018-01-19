@@ -1,0 +1,155 @@
+#contact_importer_button_container a#contact_importer_button{
+    cursor: pointer;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 3px;
+}
+
+.bsd-contactImporter{
+    display: none;
+    color: #000000;
+}
+.bsd-contactImporter .bsd-contactImporter-list ul{
+    list-style-type: none;
+}
+
+.bsd-contactImporter ul.bsd-contactImporter-list li{
+    margin-bottom: 12px;
+}
+
+.bsd-contactImporter .bsd-contactImporter-link, .bsd-contactImporter .bsd-contactImporter-logo {
+    display: block;
+    height: 32px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 40px;
+    vertical-align: middle;
+    padding-top: 14px;
+}
+.bsd-contactImporter .bsd-contactImporter-loading .bsd-contactImporter-logo{
+    margin: 0px auto;
+    float: none;
+}
+
+.bsd-contactImporter .bsd-contactImporter-logo{
+    float: left;
+    width: 32px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.bsd-contactImporter .bsd-contactImporter-gmail{
+    background-image: url('../../images/widget/contactimporter/google.png');
+}
+
+.bsd-contactImporter .bsd-contactImporter-yahoo{
+    background-image: url('../../images/widget/contactimporter/yahoo.png');
+}
+
+.bsd-contactImporter .bsd-contactImporter-windowslive{
+    background-image: url('../../images/widget/contactimporter/msn.png');
+}
+
+.bsd-contactImporter .bsd-contactImporter-aol{
+    background-image: url('../../images/widget/contactimporter/aol.png');
+}
+
+.bsd-contactImporter .bsd-contactImporter-plaxo{
+    background-image: url('../../images/widget/contactimporter/plaxo.jpg');
+}
+
+.bsd-contactImporter .bsd-contactImporter-addressbook{
+    background-image: url('../../images/widget/contactimporter/apple.png');
+}
+
+.bsd-contactImporter li a span{
+    vertical-align: middle;
+}
+.bsd-contactImporter .clear{
+    clear: both;
+    height: 4px;
+}
+
+.bsd-contactImporter .bsd-contactImporter-login{
+    display: none;
+}
+.bsd-contactImporter .bsd-contactImporter-login input {
+    margin-left: 12px;
+    width: 250px;
+}
+
+.bsd-contactImporter .bsd-contactImporter-login input#contactImporter-pw {
+    margin-left: 40px;
+}
+
+.bsd-contactImporter .backLink{
+    background-image:url('../../images/icons/silk/arrow_left.png');
+    background-position:left;
+    background-repeat:no-repeat;
+    padding:.5em 0 !important;
+    padding-left:20px !important;
+}
+
+.bsd-contactImporter #contactImporter-loginButton{
+    width: 60px;
+}
+
+.bsd-contactImporter .bsd-contactImporter-loginButtonContainer{
+    text-align: right;
+}
+
+.bsd-contactImporter .bsd-contactImporter-contacts{
+    display: none;
+}
+
+.bsd-contactImporter .bsd-contactImporter-contacts .bsd-contactImporter-addContact{
+    width: 15px;
+    float: left;
+}
+
+.bsd-contactImporter-name{
+    width: 100px;
+    overflow: hidden;
+}
+
+.bsd-contactImporter-email{
+    width: 285px;
+    overflow: hidden;
+}
+
+.bsd-contactImporter .template{
+    display: none;
+}
+
+.bsd-contactImporter .bsd-contactImporter-loading {display:none; text-align: center; }
+
+.bsd-contactImporter .bsd-contactImporter-loading .loadingMessage{font-size:1.6em; color:#336699; padding-top: 10px }
+
+.bsd-contactImporter .bsd-contactImporter-contacts{
+    height: 300px;
+    overflow: auto;
+    width: 100%;
+    padding-right: 12px;
+}
+
+.bsd-contactImporter .loginForm-errors{
+    display: none;
+    color: red;
+}
+
+.bsd-contactImporter .loginForm-errors{
+    margin-left: 110px;
+    margin-bottom: 6px;
+}
+
+.bsd-contactImporter .bsd-contactImporter-loadContactsButton{
+    display: none;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.dataTables_wrapper #contactImporter-contactsTable {margin-top: 10px}
+
+.css_right {float: right}
+.ui-widget-content {font-size: 12px}
+.ui-button {padding: 0.4em 1em 0.5em; cursor: pointer}

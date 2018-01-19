@@ -1,0 +1,224 @@
+/* ----------------------------------------------------------
+    YMCA CSS
+    Managed by: Blue State Digital
+    Last Update: May 2009 
+
+    TABLE OF CONTENT
+
+    01 - GLOBAL BROWSER RESET
+    02 - COMMON STYLE
+    03 - LAYOUT
+    04 - HOMEPAGE 
+    05 - SUBPAGES
+    06 - FRAMEWORK
+    07 - UTILITY
+	
+    COLOR GUIDE (Main Site Colors and their Hex Codes)
+	
+---------------------------------------------------------- */
+
+/* 01 =GLOBAL BROWSER RESET
+---------------------------------------------------------- */
+/* YUI Reset version: 2.7.0 */
+
+html { color: #000; background: #FFF; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var,optgroup { font-style: inherit; font-weight: inherit; }
+del,ins { text-decoration: none; }
+li { list-style: none; }
+caption, th { text-align: left; }
+h1,h2,h3,h4,h5,h6 {	font-size: 100%; font-weight: normal; }
+q:before, q:after {	content: ''; }
+abbr,acronym { border: 0; font-variant: normal; }
+sup { vertical-align: baseline; }
+sub { vertical-align: baseline; }
+/*because legend doesn't inherit in IE */
+legend { color: #000; }
+input,button,textarea,select,optgroup,option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,button,textarea,select { *font-size: 100%; }
+
+
+
+/* 02 =COMMON STYLE 
+---------------------------------------------------------- */
+
+body { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+
+.base {font-family: Verdana, Geneva, sans-serif;}
+.base a {color: #4b1f79; font-weight: bold;}
+
+.base h1 {font-size: 30px; margin: 0 0 15px 0; font-weight: bold;}
+.base h2 {font-size: 22px; margin: 0 0 10px 0;}
+.base h3 {font-size: 16px; margin: 0 0 5px 0;}
+
+.base .highlight-box p {font-style: italic;}
+
+.base p { font-size: 12px; }
+.base p {line-height: 18px; margin: 0 0 15px 0;}
+.base .highlight-box p {line-height: 20px;}
+
+.base a:hover, .base h2 a, .base h3 a, .home-blog-entry h3 a {text-decoration: none;}
+
+.base blockquote {background: url(../images/bquote.html) no-repeat; font: 15px/24px Georgia, "Times New Roman", Times, serif; margin: -10px 0 15px 35px; padding: 10px 0 0 39px;}
+
+.base ul, .base ol {margin: 0 0 15px 15px;}
+.base ul li {list-style: outside disc; margin: 0 0 5px 0;}
+.base ol li {list-style: outside decimal; margin: 0 0 5px 0;}
+.base li ol { margin: 10px 0 0 15px; }
+.base li ul { margin: 10px 0 0 15px; }
+
+
+/* 03 =LAYOUT
+---------------------------------------------------------- */
+html, body {background-color: #5e5e60;}
+#top-outer-cont {background: #fff url(../images/white-bg.jpg) top center no-repeat;}
+
+.container.top {width: 1030px; margin: 0 auto; padding: 40px 0 0 0;}
+#header {margin: 0 0 50px 40px;}
+#header .left {width: 114px;}
+#header .right {width: 840px;}
+
+#title {font-size: 36px; color: #9e0f77; text-transform: uppercase; margin: 0 0 14px 0;}
+#nav {border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; padding: 15px 0 15px 0; width: 805px; font-family: Verdana, Geneva, sans-serif; font-weight: bold;}
+.nav-li {float: left; margin-right: 27px;}
+.nav-a {color: #4b1f79; font-size: 14px; text-decoration: none;}
+
+.pledge-cont {
+    background: #bd0376; padding: 17px 10px 10px 10px; color: #fff; font-size: 21px; overflow: hidden;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+
+/* sidebar */
+.side-sprite {display: block; background-image: url(../images/sprite-png32-2011-03-17-10-08.png); text-indent: -900em;}
+#risk-tout, #get-healthy-tout {width: 273px; height: 100px;}
+#risk-tout {margin: 0 0 2px 0;}
+#get-healthy-tout {background-position: 0 -101px;}
+.side-content-block {margin: 0 0 3px 0;}
+.pledge-cont {font-family: Verdana, Geneva, sans-serif;}
+.side-content-block .pledge-cont {padding: 5px;}
+.side-content-block .pledge-cont p {padding: 0 5px;}
+.side-content-block .pledge-cont #quick-email {width: 138px; margin: 0 0 0 5px;}
+.pledge-cont p {margin: 0 0 27px 0; font-size: 22px;}
+#quick-sign-up legend {display: none;}
+#quick-sign-up input {font-size: 14px; color: #5e5e60; font-weight: bold; background: #fff; border: 0; padding: 12px; font-family: Arial, Helvetica, sans-serif;}
+#quick-email {width: 148px;}
+#quick-zip {width: 60px;}
+#quick-submit {background: url(../images/sprite-png32-2011-03-17-10-08.png) 0 -202px; border: 0; text-indent: -900em; height: 69px; width: 265px; margin: 36px 0 0 0;}
+
+
+#main {width: 670px; float: left;}
+#sidebar {width: 273px; float: right;}
+
+.interior #content {padding-bottom: 20px;}
+body.full-width #main {width: 960px;}
+
+/* footer */
+.container.bottom {background: url(../images/footer-bg.jpg) top center no-repeat; height: 700px; width: 1030px; margin: 0 auto;}
+#footer-top {height: 195px; position: relative; margin: 0 0 50px 0;}
+#tell-family-friends {position: absolute; display: block; text-indent: -900em; height: 170px; width: 275px; left: 715px; top: 20px;}
+
+#footer-bottom {text-align: center; color: #fff;}
+#footer-bottom a {color: #fff;}
+
+#facts-slider-cont {position: absolute; top: 18px; left: 34px; height: 173px; width: 671px;}
+#facts-slider-inner-cont {height: 173px; width: 671px; position: relative;}
+#facts-header {font-size: 28px; color: #5e5e60; position: absolute; top: 25px; left: 77px; text-transform: uppercase;}
+#facts-next, #facts-prev {display: block; text-indent: -900em; width: 48px; height: 173px; position: absolute; outline: 0;}
+#facts-prev {left: 0;}
+#facts-next {right: 0;}
+
+#facts-entries-wrapper {font-size: 21px; color: #5e5e60; position: absolute; top: 70px; left: 80px; width: 510px; overflow: hidden;}
+#facts-entries-wrapper a {color: #4b1f79; font-weight: bold; text-decoration: none;}
+
+
+/* 04 =HOMEPAGE
+---------------------------------------------------------- */
+#content {padding: 0 35px;}
+#home-content-cont {}
+#home-person {width: 368px; position: relative; height: 480px;}
+#person {width: 481px; height: 515px; background: url(../images/woman-2.png) no-repeat; position: absolute; left: -60px; bottom: 0;}
+
+#home-right-cont {width: 565px;}
+.white-glow-tout {
+    padding: 28px; margin: 0 0 10px 0; font-family: Verdana, Geneva, sans-serif;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-box-shadow: 0 0 5px #bcbcbc;
+    -webkit-box-shadow: 0 0 5px #bcbcbc;
+    box-shadow: 0 0 5px #bcbcbc;
+}
+.white-glow-tout p {font-size: 21px; color: #5e5e60;}
+.white-glow-tout a {color: #4b1f79; text-decoration: none; font-weight: bold;}
+
+#home-actions-cont .left {width: 283px;}
+#home-actions-cont .right {width: 273px;}
+
+#social-buttons {margin: 19px 0 0 0; padding: 0 0 0 80px;}
+.social-button {float: left; width: 63px;}
+#facebook-button {margin-right: 0;}
+
+
+/* 05 =SUBPAGES
+---------------------------------------------------------- */
+/* pages */
+
+#pages-content-cont {background: url(../images/sub-nav-bg.png) repeat-y; min-height: 450px;}
+#pages-content-cont.full-width {background: none;}
+#pages-sub-nav {width: 110px;}
+#pages-content {width: 525px;}
+#pages-content-cont.full-width #pages-content {float: none; width: 100%;}
+.subnav-a {color: #4b1f79; text-decoration: none; font-size: 14px; font-family: Verdana, Geneva, sans-serif;}
+.subnav-li {margin: 0 0 17px 0;}
+
+
+body.full-width #pages-content {width: 810px;}
+
+
+#pages table {border:1px solid #4F1E89; border-radius:5px;}
+#pages table thead {background-color:#5B2D90; color:#fff; font-weight:bold; text-transform:uppercase;}
+#pages table td {padding:5px;}
+#pages table tbody tr:nth-child(2n) {background-color: #EAE6F4;}
+
+
+
+/* 06 =FRAMEWORK
+---------------------------------------------------------- */
+.wrapper-content-cont {width: 600px; margin: 0 auto;}
+#framework {padding: 0 0 30px 0;}
+.error {color: red; font-weight: bold;}
+
+
+/* 07 =UTILITY
+---------------------------------------------------------- */
+
+.stretcher { clear: both; height: 1px; visibility: hidden; }
+.nomargin { margin-bottom: 0px; }
+.floatl {float: left; margin: 0; padding: 0 10px 10px 0;}
+.floatr {float: right; margin: 0; padding: 0 0 10px 10px;}
+.floatl-nomargin { float: left; margin: 0; padding: 0;}
+.floatr-nomargin { float: right; margin: 0; padding: 0;}
+.clear {clear:both; height:0; margin:0; font-size: 1px; line-height: 0;}
+.required { color: red; }
+
+i, em { font-style: italic; }
+b, strong { font-weight: bold; }
+
+sup, sub { height: 0; line-height: 1; vertical-align: baseline; _vertical-align: bottom; position: relative;}
+sup { bottom: 1ex; }
+sub { top: .5ex; }
+
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+.left {float: left;} .right {float: right;}
+
+/* Custom CSS */
+#facts-entries-wrapper{height: 100px;}
